@@ -1,1 +1,8 @@
-
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "app.vercel.subwaytoilet.twa",
+    "sha256_cert_fingerprints": ["24:7B:6A:63:91:E0:C9:B1:D8:0F:A3:5A:D1:C4:B1:E7:46:2E:00:3A:C3:D0:F5:83:CA:59:0C:24:71:05:D9:4F"]
+  }
+}]
