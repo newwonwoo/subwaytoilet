@@ -371,8 +371,15 @@ const UNIQUE_STATIONS = ALL_STATIONS.reduce((acc, cur) => {
   return acc;
 }, []);
 
+// 지선 노선키 → 본선 번호 매핑
+const BRANCH_TO_LINE = {
+  "2성수지선": "2",
+  "2신정지선": "2",
+  "5마천지선": "5",
+};
 function getToiletInfo(lineNum, stationName) {
-  const key = `${stationName}_${lineNum}`;
+  const baseLine = BRANCH_TO_LINE[lineNum] || lineNum;
+  const key = `${stationName}_${baseLine}`;
   const entry = TOILET_DB[key];
   if (!entry) return { toilets: [{ gate: "외부", exit: "", location: "대합실 내 (출구 방향)" }] };
   return entry;
