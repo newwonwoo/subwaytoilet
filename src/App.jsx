@@ -1035,7 +1035,7 @@ export default function App() {
     } else if (mode === "concourse") {
       setResult({ mode: "concourse", station: name, lineNum: line, info });
     } else {
-      const found = findNearestGateInToilet(line, name, direction, false);
+      const found = findNearestGateInToilet(line, name, direction, true);
       setResult({ mode: "onboard", station: name, lineNum: line, direction, found });
     }
   };
@@ -1324,40 +1324,21 @@ export default function App() {
                   label={<>
                     <span style={{color:"var(--text-dim)",fontSize:"0.85em"}}>{dirLabel} · </span>
                     {isFree
-                      ? `${found.stops === 0 ? "지금 이 역" : found.stops + "정거장 후"} — 개찰구 안 (무료)`
-                      : `${found.stops === 0 ? "지금 이 역" : found.stops + "정거장 후"} — 개찰구 밖 (하차 필요)`}
+                      ? `${found.stops}정거장 후 — 개찰구 안 (무료)`
+                      : `${found.stops}정거장 후 — 개찰구 밖 (하차 필요)`}
                   </>}
                 >
                   <div className="found-station" style={{ color: isFree ? "var(--accent)" : getLineColor(ln) }}>
                     {found.station}<span className="station-suffix">역</span>
                   </div>
                   <div className={`status-badge ${isFree ? "badge-green" : "badge-gold"}`}>
-                    {found.stops === 0 ? "⚡ 지금 즉시 하차" : `🚇 ${found.stops}정거장 후 하차`}
+                    {`🚇 ${found.stops}정거장 후 하차`}
                     {" — "}
                     {isFree ? "추가 과금 없음 ✅" : "15분 내 재승차 ⚠️"}
                   </div>
 
                   <ul className="instruction-list">
-                    {found.stops === 0 ? (<>
-                      <li className="instruction-item"><span className="inst-num">1</span>
-                        <span>🔔 <strong>지금 바로 내리세요!</strong> 현재 정차 중인 <strong>{found.station}역</strong></span>
-                      </li>
-                      {isFree ? (<>
-                        <li className="instruction-item"><span className="inst-num">2</span>
-                          <span>승강장 내 개찰구 안 화장실 이용</span>
-                        </li>
-                        <li className="instruction-item"><span className="inst-num">3</span>
-                          <span>다음 열차 탑승 — <strong>추가 과금 없음</strong></span>
-                        </li>
-                      </>) : (<>
-                        <li className="instruction-item"><span className="inst-num">2</span>
-                          <span>개찰구 밖으로 나가서 화장실 이용</span>
-                        </li>
-                        <li className="instruction-item"><span className="inst-num">3</span>
-                          <span><strong>15분 이내 재승차</strong> 시 추가 요금 없음</span>
-                        </li>
-                      </>)}
-                    </>) : (<>
+                    <>
                       <li className="instruction-item"><span className="inst-num">1</span>
                         <span>현재 방향으로 <strong>{found.stops}정거장</strong> 더 이동</span>
                       </li>
@@ -1366,7 +1347,7 @@ export default function App() {
                       </li>
                       {isFree ? (<>
                         <li className="instruction-item"><span className="inst-num">3</span>
-                          <span>승강장 내 개찰구 안 화장실 이용</span>
+                          <span>개찰구 안 화장실 이용</span>
                         </li>
                         <li className="instruction-item"><span className="inst-num">4</span>
                           <span>다음 열차 탑승 — <strong>추가 과금 없음</strong></span>
@@ -1379,7 +1360,7 @@ export default function App() {
                           <span><strong>15분 이내 재승차</strong> 시 추가 요금 없음</span>
                         </li>
                       </>)}
-                    </>)}
+                    </>
                   </ul>
 
                   {isFree
@@ -1395,12 +1376,24 @@ export default function App() {
                       ))
                   }
 
-                  {/* 더 가까운 외부 화장실 안내 */}
                   {isFree && found.nearbyOut && (
-                    <div className="note-box" style={{ marginTop: 12 }}>
-                      <span>💡</span>
+                    <div style={{
+                      marginTop: 16,
+                      padding: "14px 16px",
+                      background: "rgba(255,209,102,0.1)",
+                      border: "1px solid rgba(255,209,102,0.4)",
+                      borderLeft: "4px solid var(--gold)",
+                      borderRadius: 10,
+                      display: "flex", gap: 10, alignItems: "flex-start"
+                    }}>
+                      <span style={{fontSize: 20}}>⚡</span>
                       <span>
-                        <strong>{found.nearbyOut.station}역</strong>({found.nearbyOut.stops}정거장)에 개찰구 밖 화장실이 더 가까워요 — 15분 내 재승차 조건
+                        <div style={{color:"var(--gold)", fontWeight:700, fontSize:14, marginBottom:4}}>
+                          잠깐! 더 가까운 화장실이 있어요
+                        </div>
+                        <div style={{fontSize:13, color:"var(--text-dim)"}}>
+                          <strong style={{color:"var(--text)"}}>{found.nearbyOut.station}역</strong>({found.nearbyOut.stops}정거장)에 개찰구 밖 화장실 — 15분 내 재승차 조건
+                        </div>
                       </span>
                     </div>
                   )}
