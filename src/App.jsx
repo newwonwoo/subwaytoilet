@@ -12,7 +12,7 @@ const TOILET_DB = {
   "군포_1": {toilets:[{gate:"외부",exit:"1",location:"(2F) 비상게이트 옆"}]},
   "금천구청_1": {toilets:[{gate:"외부",exit:"1",location:"1층 광장 입구 1층 계단 옆"}]},
   "남영_1": {toilets:[{gate:"내부",exit:"1",location:"승강장 북쪽 계단 옆"}]},
-  "노량진_1": {toilets:[{gate:"내부",exit:"2",location:"2번출구 표 내는 곳 앞"}]},
+  "노량진_1": {toilets:[{gate:"외부",exit:"2",location:"2번 출구 표 내는 곳 앞 (개찰구 밖)"}]},
   "녹양_1": {toilets:[{gate:"외부",exit:"1",location:"(1F) 1번출구 왼편"}]},
   "녹천_1": {toilets:[{gate:"내부",exit:"3",location:"(1F) 남부 월계역 방향 승강장 5호기 E/V 옆"},{gate:"내부",exit:"2",location:"(2F) 북부 월계역 방향 승강장 계단 앞"}]},
   "당정_1": {toilets:[{gate:"외부",exit:"3",location:"출입구 옆 1번 출입구 방향"}]},
@@ -20,7 +20,7 @@ const TOILET_DB = {
   "덕계_1": {toilets:[{gate:"외부",exit:"1",location:"1번출구 진입후 좌측"}]},
   "덕정_1": {toilets:[{gate:"외부",exit:"1",location:"맞이방 표 내는 곳 옆"}]},
   "도봉_1": {toilets:[{gate:"외부",exit:"2",location:"(1F) 남부 고객지원실 옆 2번 출입구 방향"},{gate:"내부",exit:"1",location:"(1F) 맞이방 1번 출입구 방향"}]},
-  "도봉산_1": {toilets:[{gate:"외부",exit:"1",location:"(2F) 맞이방 앞 1 3번 출입구 방향"}]},
+  "도봉산_1": {toilets:[{gate:"내부",exit:"",location:"북쪽 7호선 환승통로 구역 (1-1번 출구 방향)"},{gate:"외부",exit:"1",location:"(2F) 맞이방 앞 1·3번 출입구 방향"}]},
   "도원_1": {toilets:[{gate:"내부",exit:"1",location:"(2) 표내는곳 내 계단 옆 인천방면 방향"}]},
   "도화_1": {toilets:[{gate:"내부",exit:"4",location:"표내는곳 나와 우측"}]},
   "독산_1": {toilets:[{gate:"외부",exit:"1",location:"(2F) 1번 출입구 방향 역무실 맞은편"}]},
@@ -44,7 +44,7 @@ const TOILET_DB = {
   "부평_1": {toilets:[{gate:"내부",exit:"1",location:"1번 출입구 표내는 곳 내부"},{gate:"외부",exit:"",location:"지하 표내는곳 바깥쪽 지하2층 지하 맞이방"},{gate:"외부",exit:"2",location:"2번 출입구 방향"}]},
   "서동탄_1": {toilets:[{gate:"외부",exit:"1",location:"1번 출입구 맞이방 내 오른쪽"}]},
   "서울_1": {toilets:[{gate:"외부",exit:"2",location:"지하1층 2번출구 부근"}]},
-  "서울역_1": {toilets:[{gate:"외부",exit:"2",location:"지하1층 2번출입구 부근"}]},
+  "서울역_1": {toilets:[{gate:"내부",exit:"",location:"지하1층 대합실 (공항철도 환승 통로 인근)"},{gate:"외부",exit:"2",location:"지하1층 2번 출입구 부근"}]},
   "서정리_1": {toilets:[{gate:"외부",exit:"1",location:"(3F) 맞이방자동발매기 옆 1번 출입구 방향"}]},
   "석계_1": {toilets:[{gate:"내부",exit:"1",location:"(B1) 게이트 개표 후 왼쪽 방향"}]},
   "석수_1": {toilets:[{gate:"외부",exit:"1",location:"맞이방 입구와 게이트 사이 1번 출입구 방향"},{gate:"내부",exit:"1",location:"하선승강장 계단 내려가서 오른쪽 코너 하선승강장 1-1에서 왼쪽 코너"}]},
@@ -103,7 +103,7 @@ const TOILET_DB = {
   "회룡_1": {toilets:[{gate:"외부",exit:"3",location:"(3F) 3번출입구 맞이방"}]},
   "강남_2": {toilets:[{gate:"내부",exit:"1",location:"대합실 1층 역무실쪽 (1·12번 출입구쪽) 표 내는 곳 내부"},{gate:"외부",exit:"",location:"각 출구 방향 대합실 (중앙광장 쪽)"}]},
   "강변_2": {toilets:[{gate:"외부",exit:"2",location:"대합실 1층 통로 중앙"}]},
-  "건대입구_2": {toilets:[{gate:"내부",exit:"2",location:"대합실 2층 통로 중앙"}]},
+  "건대입구_2": {toilets:[{gate:"내부",exit:"",location:"대합실 2층 통로 중앙 (장암방면 상행 승강장 한정)"}]},
   "교대_2": {toilets:[{gate:"내부",exit:"",location:"2-3호선 환승 통로 구역"},{gate:"외부",exit:"",location:"대합실 1층 1·2·3·4번 출입구 쪽"}]},
   "구로디지털단지_2": {toilets:[{gate:"내부",exit:"1",location:"지상2층 역무실 앞 (표 내는 곳 내부)"}]},
   "구의_2": {toilets:[{gate:"외부",exit:"2",location:"대합실 2층 통로 중앙"}]},
@@ -111,7 +111,7 @@ const TOILET_DB = {
   "당산_2": {toilets:[{gate:"내부",exit:"4",location:"지상2층 대합실 중앙 (표 내는 곳 내부, 9호선 환승통로 인근)"},{gate:"외부",exit:"7",location:"7·10·11·12·13번 출구쪽 대합실 (개찰구 밖으로 개수됨)"}]},
   "대림_2": {toilets:[{gate:"내부",exit:"6",location:"지상2층 대합실 중앙(표 내는 곳 내부)"}]},
   "도림천_2": {toilets:[{gate:"외부",exit:"1",location:"지상1층 역무실 옆(표 내는 곳 외부)"}]},
-  "동대문역사문화공원_2": {toilets:[{gate:"내부",exit:"1",location:"대합실 1층 역무실 앞"}]},
+  "동대문역사문화공원_2": {toilets:[{gate:"내부",exit:"",location:"대합실 1층 역무실 앞 (개찰구 안)"},{gate:"외부",exit:"",location:"대합실 1층 (개찰구 밖)"}]},
   "뚝섬_2": {toilets:[{gate:"외부",exit:"6",location:"역무실 옆"}]},
   "문래_2": {toilets:[{gate:"외부",exit:"3",location:"지하1층 대합실(표 내는 곳 외부 2 3번출입구방향)"}]},
   "방배_2": {toilets:[{gate:"외부",exit:"4",location:"서초방면 대합실 끝(1 4번 출입구방향) 표 내는 곳 외부"}]},
@@ -128,7 +128,7 @@ const TOILET_DB = {
   "신당_2": {toilets:[{gate:"외부",exit:"2",location:"대합실 1층 22 23번기둥"}]},
   "신대방_2": {toilets:[{gate:"내부",exit:"4",location:"대합실 2층 역무실쪽(1 2번출입구쪽) 표 내는 곳 내부"}]},
   "신도림_2": {toilets:[{gate:"외부",exit:"1",location:"지하1층 대합실(표 내는 곳 외부 1번출입구방향)"},{gate:"내부",exit:"1",location:"지하1층 대합실 (표 내는 곳 내부 1번출입구방향)"}]},
-  "신림_2": {toilets:[{gate:"내부",exit:"4",location:"대합실 1층 역무실 맞은편(3 4번출입구쪽) 표 내는 곳 내부"}]},
+  "신림_2": {toilets:[{gate:"외부",exit:"",location:"대합실 1층 역무실 맞은편 (신림선 개통 후 개찰구 밖으로 이전)"}]},
   "신설동_2": {toilets:[{gate:"내부",exit:"7",location:"대합실(지하1층) 역무실 옆"}]},
   "신정네거리_2": {toilets:[{gate:"외부",exit:"3",location:"지하1층 대합실(표 내는 곳 외부 2번 3번 출입구방향)"}]},
   "신촌_2": {toilets:[{gate:"외부",exit:"5",location:"지하1층대합실 5번출입구 옆"}]},
@@ -136,7 +136,7 @@ const TOILET_DB = {
   "양천구청_2": {toilets:[{gate:"내부",exit:"1",location:"지하1층 대합실(표 내는 곳 내부 신청자량사업소출입구 옆)"}]},
   "역삼_2": {toilets:[{gate:"외부",exit:"3",location:"대합실 2층 통로 중앙"}]},
   "영등포구청_2": {toilets:[{gate:"내부",exit:"2",location:"지하1층 대합실(표 내는 곳 내부 환승통로입구)"}]},
-  "왕십리_2": {toilets:[{gate:"외부",exit:"6-1",location:"지하1층 6-1번 출입구 쪽"}]},
+  "왕십리_2": {toilets:[{gate:"외부",exit:"",location:"지하1층 6-1번 출입구 쪽 (5호선·경의중앙선 환승통로 인근)"}]},
   "용답_2": {toilets:[{gate:"외부",exit:"1",location:"대합실"}]},
   "용두_2": {toilets:[{gate:"외부",exit:"5",location:"(내선대합실)5번출입구 입구"},{gate:"외부",exit:"2",location:"(외선대합실)1 2번 출입구 입구"},{gate:"내부",exit:"5",location:"(내선승강장)3-3 승강장 앞"},{gate:"내부",exit:"2",location:"(외선승강장)2-2 승강장 앞"}]},
   "을지로3가_2": {toilets:[{gate:"외부",exit:"2",location:"지하1층 (다) 표 내는 곳 옆"}]},
@@ -149,7 +149,7 @@ const TOILET_DB = {
   "종합운동장_2": {toilets:[{gate:"외부",exit:"5",location:"대합실 1층 5번출입구 앞 (삼성측)"},{gate:"외부",exit:"1",location:"대합실 1층 1 2번출입구 앞 (잠실새내측)"}]},
   "충정로_2": {toilets:[{gate:"외부",exit:"6",location:"지하2층 아현방면 끝단"}]},
   "한양대_2": {toilets:[{gate:"외부",exit:"2",location:"고객센터 맞은편"}]},
-  "합정_2": {toilets:[{gate:"내부",exit:"1",location:"지하1층대합실 1 2번출입구"}]},
+  "합정_2": {toilets:[{gate:"내부",exit:"",location:"지하1층 대합실 1·2번 출입구 (개찰구 안, 외부는 6호선 구역만)"}]},
   "홍대입구_2": {toilets:[{gate:"외부",exit:"8",location:"지하1층 대합실 8·9번 출구 방향"}]},
   "가락시장_3": {toilets:[{gate:"외부",exit:"2",location:"대합실 B2층 고객상담실앞(표 내는 곳 외부)"},{gate:"내부",exit:"2",location:"대합실 B2층 고객상담실앞(표 내는 곳 내부)"}]},
   "경복궁_3": {toilets:[{gate:"내부",exit:"3",location:"지하2층 대합실 (가) 표 내는 곳 내부"}]},
@@ -214,7 +214,7 @@ const TOILET_DB = {
   "불암산_4": {toilets:[{gate:"외부",exit:"4",location:"대합실 1층 (1 4 출입구방향)"},{gate:"외부",exit:"3",location:"대합실 2층 역무실 앞"}]},
   "사당_4": {toilets:[{gate:"내부",exit:"12",location:"(지하2층 환승통로)"},{gate:"외부",exit:"3",location:"(지하1층 남태령측)"},{gate:"외부",exit:"12",location:"(지하1층 총신대측)"}]},
   "산본_4": {toilets:[{gate:"외부",exit:"2",location:"(3F) 대합실 중앙 이디야 맞은편 강경렌트카 옆"}]},
-  "삼각지_4": {toilets:[{gate:"외부",exit:"3",location:"신용산측"}]},
+  "삼각지_4": {toilets:[{gate:"내부",exit:"",location:"4호선 개찰구 안 (개찰구 조정으로 내부화됨)"},{gate:"외부",exit:"",location:"신용산측 대합실 개찰구 밖"}]},
   "상계_4": {toilets:[{gate:"내부",exit:"4",location:"2층 대합실 (나) 표 내는 곳 안"}]},
   "상록수_4": {toilets:[{gate:"내부",exit:"3",location:"(1층) 표 내는 곳 내 역무실 맞은편 3번/4번 출입구 방향"},{gate:"외부",exit:"1",location:"(1층) 표 내는 곳 옆 2번 출입구 방향"}]},
   "서울_4": {toilets:[{gate:"외부",exit:"11",location:"14번 출구 옆, 11번 출구 물품보관함 건너편"}]},
@@ -237,9 +237,9 @@ const TOILET_DB = {
   "중앙_4": {toilets:[{gate:"내부",exit:"1",location:"(1층) 표내는곳 내 오이도방향 계단 옆"}]},
   "진접_4": {toilets:[{gate:"외부",exit:"2",location:"(B1) 대합실 내 2번 출입구 방향"}]},
   "창동_4": {toilets:[{gate:"내부",exit:"1",location:"2층 대합실 (나) 표 내는 곳 안"}]},
-  "초지_4": {toilets:[{gate:"내부",exit:"1",location:"(1F) 맞이방 표 내는 곳 안쪽 계단통로 가운데"}]},
+  "초지_4": {toilets:[{gate:"내부",exit:"1",location:"1번 출구 방향 4호선 대합실 개찰구 안"},{gate:"외부",exit:"2",location:"2~4번 출구 방향 대합실 개찰구 밖"}]},
   "총신대입구_4": {toilets:[{gate:"내부",exit:"1",location:"지하1층 동작측"}]},
-  "충무로_4": {toilets:[{gate:"내부",exit:"3",location:"지하2층 3 4 5 6 7번 출입구쪽 표 내는 곳 내부"}]},
+  "충무로_4": {toilets:[{gate:"내부",exit:"",location:"지하2층 3·4·5·6·7번 출입구쪽 표 내는 곳 내부"},{gate:"외부",exit:"",location:"대합실 지하2층 개찰구 밖 (3호선 환승통로 인근)"}]},
   "평촌_4": {toilets:[{gate:"외부",exit:"2",location:"(B1) 2번출구 나가기 전 3번/4번 출입구 방향"}]},
   "한대앞_4": {toilets:[{gate:"내부",exit:"1",location:"(2층)개찰구 내 에스컬레이터 옆"}]},
   "한성대입구_4": {toilets:[{gate:"외부",exit:"7",location:"1번출입구방향 (가) 표 내는 곳 쪽(표 내는 곳 외부)"}]},
@@ -277,7 +277,7 @@ const TOILET_DB = {
   "송정_5": {toilets:[{gate:"외부",exit:"1 2",location:"대합실 2층 ES 1호기 앞"},{gate:"외부",exit:"1 또는2",location:"대합실 2층 ES 1호기 앞"}]},
   "신금호_5": {toilets:[{gate:"외부",exit:"5",location:"B2 표 내는 곳 앞"}]},
   "신길_5": {toilets:[{gate:"외부",exit:"3",location:"대합실(B3) 3번출입구 앞"}]},
-  "신정_5": {toilets:[{gate:"외부",exit:"2 3",location:"2 3번 출입구 지하 (가)대합실 운임지역 내"},{gate:"외부",exit:"2 또는3",location:"2,3번 출구 지하 (가)대합실 운임지역 내"}]},
+  "신정_5": {toilets:[{gate:"내부",exit:"",location:"2·3번 출입구 지하 (가)대합실 운임지역 내"},{gate:"외부",exit:"",location:"대합실 개찰구 밖"}]},
   "아차산_5": {toilets:[{gate:"외부",exit:"3",location:"지하1층 대합실"}]},
   "애오개_5": {toilets:[{gate:"외부",exit:"3",location:"대합실 1층 표 내는 곳 통과 후좌측"}]},
   "양평_5": {toilets:[{gate:"내부",exit:"1 2",location:"b1층 고객상담실 옆. 운임지역내"},{gate:"내부",exit:"1 또는2",location:"b1층 고객상담실 옆. 운임지역내"}]},
@@ -288,7 +288,7 @@ const TOILET_DB = {
   "오금_5": {toilets:[{gate:"내부",exit:"6 7",location:"대합실 지하1층 방이역 방향"},{gate:"내부",exit:"6 또는7",location:"대합실 지하1층 방이역 방향"}]},
   "오목교_5": {toilets:[{gate:"외부",exit:"3",location:"대합실 B1층 3번 출입구 방향 임대상가 옆"}]},
   "올림픽공원_5": {toilets:[{gate:"외부",exit:"2",location:"대합실 지하1층 2번출입구 앞"}]},
-  "왕십리_5": {toilets:[{gate:"내부",exit:"4",location:"b2 대합실 상가2002호점 옆"}]},
+  "왕십리_5": {toilets:[{gate:"내부",exit:"",location:"B2 대합실 (2호선 외선↔5호선 환승통로 인근)"},{gate:"외부",exit:"",location:"대합실 개찰구 밖"}]},
   "우장산_5": {toilets:[{gate:"외부",exit:"2",location:"지하1층 대합실 2번출입구 앞"}]},
   "을지로4가_5": {toilets:[{gate:"외부",exit:"1 2",location:"대합실 B1층 B2층 내려가는 계단 앞"},{gate:"외부",exit:"1 또는2",location:"대합실 B1층, B2층 내려가는 계단 앞"}]},
   "장한평_5": {toilets:[{gate:"외부",exit:"1",location:"지하 1층 1번출입구 나가기전좌측방향"}]},
@@ -366,7 +366,7 @@ const TOILET_DB = {
   "신대방삼거리_7": {toilets:[{gate:"외부",exit:"1 2",location:"대합실 2층"},{gate:"외부",exit:"1 또는2",location:"대합실 2층"}]},
   "신풍_7": {toilets:[{gate:"외부",exit:"5",location:"대합실 1층 5번출입구방향"}]},
   "어린이대공원_7": {toilets:[{gate:"외부",exit:"1 6",location:"B2층 아이센터 옆"},{gate:"외부",exit:"1 또는6",location:"B2층 아이센터 옆"}]},
-  "온수_7": {toilets:[{gate:"외부",exit:"4",location:"대합실 1층 4번출입구 방향"}]},
+  "온수_7": {toilets:[{gate:"내부",exit:"",location:"1호선 환승통로 통해 접근 (상시 개방)"},{gate:"외부",exit:"4",location:"대합실 1층 4번 출구 방향"}]},
   "용마산_7": {toilets:[{gate:"외부",exit:"1",location:"B1층 1번출입구 앞"}]},
   "이수_7": {toilets:[{gate:"외부",exit:"7 또는8",location:"지하1층 연결통로"},{gate:"내부",exit:"7 또는8",location:"지하3층 (가)게이트안쪽 상선 내부계단 옆"}]},
   "자양_7": {toilets:[{gate:"내부",exit:"1 4",location:"지상2층 대합실"}]},
@@ -382,7 +382,7 @@ const TOILET_DB = {
   "태릉입구_7": {toilets:[{gate:"외부",exit:"2 3",location:"대합실 지하3층 고객상담실 앞"},{gate:"외부",exit:"2 또는3",location:"대합실 지하3층 고객상담실 앞"}]},
   "하계_7": {toilets:[{gate:"외부",exit:"4",location:"지하1층 4번출입구"}]},
   "학동_7": {toilets:[{gate:"외부",exit:"1 2",location:"B2 1 2번 출입구 계단 옆"},{gate:"외부",exit:"1 또는2",location:"B2 1,2번 출구 계단 옆"}]},
-  "가락시장_8": {toilets:[{gate:"외부",exit:"2-1",location:"B1층 대합실과 가락몰 연결통로 사이"}]},
+  "가락시장_8": {toilets:[{gate:"내부",exit:"",location:"3호선 방향으로 내려가 계단 올라가면 개찰구 안"},{gate:"외부",exit:"",location:"B1층 대합실과 가락몰 연결통로 사이"}]},
   "강동구청_8": {toilets:[{gate:"외부",exit:"4",location:"대합실 B2층 표 내는 곳 옆"},{gate:"외부",exit:"4 또는5",location:"대합실 B2층 게이트 옆"}]},
   "남위례_8": {toilets:[{gate:"외부",exit:"1",location:"대합실 지상2층 주출입구 근처"}]},
   "남한산성입구_8": {toilets:[{gate:"외부",exit:"1",location:"대합실 지하2층 에스컬레이터 근처"},{gate:"외부",exit:"1 또는2",location:"대합실 지하2층 에스컬레이터 근처"}]},
@@ -394,7 +394,7 @@ const TOILET_DB = {
   "별내_8": {toilets:[{gate:"내부",exit:"4",location:"(B1) 4번 출입구 앞 개찰구 내부"},{gate:"외부",exit:"4",location:"(B1) 4번 출입구 앞 개찰구 외부"}]},
   "복정_8": {toilets:[{gate:"외부",exit:"1",location:"대합실 지하1층 아이센터 근처"}]},
   "산성_8": {toilets:[{gate:"외부",exit:"1",location:"B1층 1 2번 출입구 계단 오른쪽"},{gate:"외부",exit:"1 또는2",location:"B1층 1,2번 출구 계단 오른쪽"}]},
-  "석촌_8": {toilets:[{gate:"외부",exit:"7",location:"대합실 B1층 표 내는 곳 옆"},{gate:"외부",exit:"7 또는8",location:"대합실 B1층 게이트 옆"}]},
+  "석촌_8": {toilets:[{gate:"내부",exit:"",location:"9호선 환승 게이트 통과 후 개찰구 안 (거리 있음)"},{gate:"외부",exit:"",location:"대합실 B1층 고객안전실 부근"}]},
   "송파_8": {toilets:[{gate:"외부",exit:"1",location:"대합실 B1층 1번출입구 방향"}]},
   "수진_8": {toilets:[{gate:"외부",exit:"1",location:"대합실 지하1층 편의점 옆"},{gate:"외부",exit:"1 또는2",location:"대합실 지하1층 편의점 옆"}]},
   "신흥_8": {toilets:[{gate:"외부",exit:"1",location:"B1층 대합실 1 2번 출입구방면"},{gate:"외부",exit:"1 또는2",location:"B1층 대합실 1,2번 출구방면"}]},
@@ -432,7 +432,7 @@ const TOILET_DB = {
   "신방화_9": {toilets:[{gate:"외부",exit:"6",location:"(B1) 안전관리실 앞"}]},
   "양천향교_9": {toilets:[{gate:"외부",exit:"3",location:"(B1) 3번 출입구 옆 1번~3번 출입구 방향"}]},
   "언주_9": {toilets:[{gate:"외부",exit:"1번출구",location:"대합실 B1층 2,3번출구 사이"}]},
-  "여의도_9": {toilets:[{gate:"외부",exit:"3",location:"(B1) 임대상가 앞 3번/4번 출입구 방향"},{gate:"내부",exit:"",location:"(B2)국회의사당방면(하선) 승강장 3-1 PSD 앞"}]},
+  "여의도_9": {toilets:[{gate:"내부",exit:"",location:"(B2) 국회의사당방면(하선) 승강장 3-1 PSD 앞 (개화방면 한정)"},{gate:"외부",exit:"",location:"(B1) 임대상가 앞 3·4번 출입구 방향"}]},
   "염창_9": {toilets:[{gate:"외부",exit:"4",location:"(B1) 4번 출입구 방향"}]},
   "올림픽공원_9": {toilets:[{gate:"내부",exit:"5호선 환승통로",location:"대합실 B1층 고객안전실 부근"},{gate:"외부",exit:"3번출구",location:"대합실 B1층 개찰구(9) 부근"}]},
   "종합운동장_9": {toilets:[{gate:"내부",exit:"2호선 환승통로",location:"대합실 B2층 환승통로"},{gate:"외부",exit:"9번출구",location:"대합실 B1층 지하연결통로 반대편"}]},
@@ -607,7 +607,7 @@ const TOILET_DB = {
   "시흥능곡_서해": {toilets:[{gate:"외부",exit:"",location:"대합실 개찰구 밖"}]},
   "달미_서해": {toilets:[{gate:"외부",exit:"",location:"대합실 개찰구 밖"}]},
   "선부_서해": {toilets:[{gate:"외부",exit:"",location:"대합실 개찰구 밖"}]},
-  "초지_서해": {toilets:[{gate:"내부",exit:"",location:"5번 출구 방면 한정 (나머지는 개찰구 밖)"}]},
+  "초지_서해": {toilets:[{gate:"내부",exit:"5",location:"5번 출구 방면 대합실 개찰구 안"},{gate:"외부",exit:"2",location:"2~4번 출구 방면 대합실 개찰구 밖"}]},
   "안산_서해": {toilets:[{gate:"외부",exit:"",location:"4호선 대합실"}]},
   "어천_서해": {toilets:[{gate:"외부",exit:"",location:"수인분당선 대합실"}]},
   "야목_서해": {toilets:[{gate:"외부",exit:"",location:"수인분당선 대합실"}]},
@@ -648,6 +648,29 @@ const TOILET_DB = {
   "서울역_GTX-A": {toilets:[{gate:"외부",exit:"",location:"대합실 개찰구 밖"}]},
 
   "고속터미널_3": {toilets:[{gate:"내부",exit:"",location:"3-7호선 환승 통로 내부"},{gate:"외부",exit:"",location:"3호선 대합실 안쪽"}]},
+  "지축_3": {toilets:[{gate:"외부",exit:"",location:"대합실 개찰구 밖"}]},
+  "충무로_3": {toilets:[{gate:"내부",exit:"",location:"4호선·3호선 환승통로 내부 (4호선 구역)"},{gate:"외부",exit:"",location:"대합실 개찰구 밖"}]},
+  "청구_5": {toilets:[{gate:"외부",exit:"",location:"B1 대합실 개찰구 밖 (하행 비상게이트 상시개방)"}]},
+  "신내_6": {toilets:[{gate:"외부",exit:"",location:"지하 1층 대합실 개찰구 밖"}]},
+  "산곡_7": {toilets:[{gate:"외부",exit:"",location:"지하 대합실 개찰구 밖"}]},
+  "석남_7": {toilets:[{gate:"외부",exit:"",location:"지하 대합실 개찰구 밖"}]},
+  "동구릉_8": {toilets:[{gate:"외부",exit:"",location:"대합실 B1층 개찰구 밖"}]},
+  "구리_8": {toilets:[{gate:"외부",exit:"",location:"대합실 B1층 개찰구 밖"}]},
+  "장자호수공원_8": {toilets:[{gate:"외부",exit:"",location:"대합실 B1층 개찰구 밖"}]},
+  "천호_8": {toilets:[{gate:"외부",exit:"",location:"대합실 B1층 개찰구 밖"}]},
+  "선정릉_9": {toilets:[{gate:"외부",exit:"",location:"대합실 B1층 개찰구 밖"}]},
+  "복정_수인분당": {toilets:[{gate:"외부",exit:"",location:"대합실 지하1층 아이센터 근처 (8호선 공용)"}]},
+  "대곡_경의중앙": {toilets:[{gate:"내부",exit:"",location:"3호선 개찰구 방면 (3호선/GTX-A 구역에 가까움)"},{gate:"외부",exit:"",location:"대합실 개찰구 밖"}]},
+  "화전_경의중앙": {toilets:[{gate:"외부",exit:"",location:"대합실 맞이방 개찰구 밖"}]},
+  "향동_경의중앙": {toilets:[{gate:"외부",exit:"",location:"대합실 맞이방 개찰구 밖"}]},
+  "인천공항2터미널_공항철도": {toilets:[{gate:"내부",exit:"",location:"공항 내 화장실 (개찰구 안, 공항 내 다수 위치)"}]},
+  "인천공항1터미널_공항철도": {toilets:[{gate:"내부",exit:"",location:"공항 내 화장실 (개찰구 안, 공항 내 다수 위치)"}]},
+  "킨텍스_GTX-A": {toilets:[{gate:"외부",exit:"",location:"대합실 개찰구 밖"}]},
+  "연신내_GTX-A": {toilets:[{gate:"외부",exit:"",location:"대합실 개찰구 밖"}]},
+  "성남_GTX-A": {toilets:[{gate:"외부",exit:"",location:"대합실 개찰구 밖"}]},
+  "동탄_GTX-A": {toilets:[{gate:"외부",exit:"",location:"대합실 개찰구 밖"}]},
+  "청량리_수인분당": {toilets:[{gate:"외부",exit:"",location:"1호선·경의중앙선 환승통로 대합실 (수인분당선 자체 화장실 없음)"}]},
+  "왕십리_수인분당": {toilets:[{gate:"외부",exit:"",location:"대합실 (2호선·5호선·경의중앙선 공용 구역 접근)"}]},
 };
 
 const LINES = {
@@ -731,7 +754,7 @@ const STATION_LINE_REMAP = {
   // 9호선
   "9": { "선정릉": "수인분당" },
   // GTX-A
-  "GTX-A": { "수서": "3", "구성": "수인분당" },
+  "GTX-A": { "수서": "3", "구성": "수인분당", "대곡": "3" },
   // 경의중앙
   "경의중앙": { "마포": "5", "옥수": "3", "용산": "1", "회기": "1" },
   // 신분당
@@ -929,6 +952,8 @@ const STYLE = `
   .line-badge { display: inline-flex; align-items: center; border-radius: 5px; padding: 2px 7px; font-size: 10px; font-weight: 700; color: #fff; flex-shrink: 0; }
   .reset-btn { width: 100%; padding: 13px; background: none; border: 1px solid var(--border); border-radius: 12px; color: var(--text-dim); cursor: pointer; font-family: 'Noto Sans KR', sans-serif; font-size: 14px; transition: all 0.15s; }
   .reset-btn:hover { border-color: rgba(255,255,255,0.2); color: var(--text); }
+  .nearby-btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 14px; margin-top: 12px; background: rgba(66,133,244,0.1); border: 1.5px solid rgba(66,133,244,0.4); border-radius: 12px; color: #6ab0ff; cursor: pointer; font-family: 'Noto Sans KR', sans-serif; font-size: 14px; font-weight: 600; text-decoration: none; transition: all 0.15s; }
+  .nearby-btn:hover { background: rgba(66,133,244,0.18); border-color: rgba(66,133,244,0.7); }
   .tips-section { padding: 0 24px 20px; }
   .tip-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; margin-top: 10px; }
   .tip-title { font-size: 10px; letter-spacing: 2px; color: var(--accent2); font-family: 'JetBrains Mono', monospace; margin-bottom: 10px; text-transform: uppercase; }
@@ -1218,6 +1243,14 @@ export default function App() {
                   </>) : (<>
                     <div className="status-badge badge-red">❌ 개찰구 밖 화장실 없음</div>
                     {hasGateIn(info) && <div className="note-box"><span>💡</span><span>개찰구 안에만 화장실 있음 — 승차 후 이용 또는 역무원 문의</span></div>}
+                    <a
+                      className="nearby-btn"
+                      href={`https://www.google.com/maps/search/공중화장실+${station}역`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      🗺️ 역 근처 공중화장실 찾기
+                    </a>
                   </>)}
                 </ResultCard>
               </>);
