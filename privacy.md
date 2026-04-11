@@ -70,7 +70,7 @@
 
 본 개인정보처리방침 및 앱 이용에 관한 문의는 아래 이메일로 연락해 주시기 바랍니다.
 
-**이메일:** CONTACT_EMAIL_PLACEHOLDER
+**이메일:** maspiece83@gmail.com
 
 ---
 
